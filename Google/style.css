@@ -11,46 +11,69 @@ body {
     grid-template-rows: 50px;
     grid-template-areas: 
     "about store . gmail images menu sign-in";
+    padding-right: 1em;
 }
 
-a,p {text-decoration: none; 
+a,p {
+
+text-decoration: none; 
 color: rgba(0,0,0,0.87);
 font-size: 13px;
 font-family: Arial,sans-serif;
 }
-
+a:hover{
+    text-decoration: underline;
+}
 #about { 
     grid-area: about;
     justify-self: center;
     align-self: center;
+    opacity: 0.8;
 }
 #store { 
     grid-area:  store;
     justify-self: center;
     align-self: center;
+    opacity: 0.8;
 }
 #gmail { 
     grid-area:  gmail;
     justify-self: center;
     align-self: center;
+    
 }
 #images { 
     grid-area: images;
     justify-self: center;
     align-self: center; 
+    margin-right: 10px;
+    o
 }
 #menu {
     grid-area: menu;
     justify-self: center;
     align-self: center;
+    margin-right: 20px;
+    opacity: 0.6;
 }
 #sign-in {
     grid-area: sign-in;
     justify-self: center;
     align-self: center; 
+    background-color: #4683ea;
+    height: 30px;
+    width: 65px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    
 }
+
 .navbar-item {
-    padding: 2em;
+    padding-left: 1.5em;
+    margin-top: 1em;
 }
 /*Main*/
 #main {
@@ -92,8 +115,35 @@ font-family: Arial,sans-serif;
     align-self: center;
     flex-grow: 1;
 }
-#google-search-btn {}
-#random-search-btn {}
+#google-search-btn {
+    border:none;
+    font-size: 14px;
+    color: #5F6368;
+    padding: 10px 15px 10px 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+
+}
+#random-search-btn {
+    border:none;
+    font-size: 14px;
+    color: #5F6368;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+#google-search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 7px 15px 7px 15px;
+    border-radius: 5px;
+    color: black; 
+}
+#random-search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 7px 15px 7px 15px;
+    border-radius: 5px;
+    color: black; 
+}
+
 #google-text {
     grid-area: google-text;
     justify-self: center;
@@ -117,12 +167,14 @@ font-family: Arial,sans-serif;
 }
 .container>.footer {
     flex:0;
+    background-color: rgb(243, 236, 236);
 }
 
 .footer {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    opacity: 0.8;
 }
 .footer-item {
     padding: 1em;
